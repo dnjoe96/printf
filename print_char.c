@@ -8,5 +8,5 @@
  */
 void print_char(char c)
 {
-	putchar(c);
+	_putchar(c);
 }
