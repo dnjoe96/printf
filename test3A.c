@@ -58,7 +58,7 @@ int _printf(const char* format,...)
 		traverse++; 
 		
 /**
- * @lst: fetche and execute arguments
+ * @lst: fetch and execute arguments
  */
 		switch(*traverse) 
 		{ 
