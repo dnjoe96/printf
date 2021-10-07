@@ -19,6 +19,7 @@ int print_d(int a)
 	aux_Num = a;
 	count_Zero = 1;
 
+	while (aux_Num > 9)
 	{
 		aux_Num /= 10;
 		count_Zero *= 10;
