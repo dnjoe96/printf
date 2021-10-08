@@ -13,6 +13,9 @@ int print_rot13(va_list list)
 	char *a = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char *b = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
+	if (s == NULL)
+		return (0);
+
 	count = 0;
 	for (i = 0; *(s + i); i++)
 	{
