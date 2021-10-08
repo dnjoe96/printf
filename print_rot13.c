@@ -13,7 +13,7 @@ int print_rot13(va_list list)
 	char *a = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char *b = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	if (s == NULL)
+	if (s == '\0')
 		return (0);
 
 	count = 0;
