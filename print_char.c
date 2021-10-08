@@ -3,10 +3,17 @@
 /**
  * print_char - prints out a character
  *
- * @c: char input
- * Return: void
+ * @list: A variable list of va_list type from stdarg.h
+ * Return: 1
  */
-void print_char(char c)
+int print_char(va_list list)
 {
-	_putchar(c);
+	char c;
+
+	c = va_arg(list, int);
+
+	if (c == '\0')
+		return (0);
+	write(1, &c, 1);
+	return (1);
 }
