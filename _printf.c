@@ -36,7 +36,7 @@ int _printf(const char *format, ...)
 				continue;
 			find = 0;
 
-			for (j = 0; j < 4; j++)
+			for (j = 0; j < 6; j++)
 			{
 				if (*(format + i + 1) == arguments[j].spec)
 				{
