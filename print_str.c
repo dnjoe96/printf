@@ -8,12 +8,12 @@
  */
 int print_str(char *s)
 {
-	if (s == NULL)
+	if (*s == '\0')
 		return (0);
 
 	while (*s)
 	{
-		putchar(*s);
+		_putchar(*s);
 		s++;
 	}
 

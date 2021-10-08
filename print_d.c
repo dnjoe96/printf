@@ -8,17 +8,18 @@
  */
 int print_d(int a)
 {
-	unsigned int num_abs, aux_Num, count_Zero;
+	unsigned int aux_Num, count_Zero;
 
 	if (a < 0)
 	{
 		a = a * -1;
-		putchar(45);
+		_putchar(45);
 	}
 
 	aux_Num = a;
 	count_Zero = 1;
 
+	while (aux_Num > 9)
 	{
 		aux_Num /= 10;
 		count_Zero *= 10;
@@ -26,7 +27,7 @@ int print_d(int a)
 
 	while (count_Zero >= 1)
 	{
-		putchar(((a / count_Zero) % 10) + '0');
+		_putchar(((a / count_Zero) % 10) + '0');
 		count_Zero /= 10;
 	}
 	return (0);
