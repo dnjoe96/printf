@@ -17,6 +17,7 @@ int _printf(const char *format, ...)
 		{'d', print_d},
 		{'i', print_d},
 		{'s', print_str},
+		{'R', print_rot13},
 	};
 
 	if (format == NULL)
